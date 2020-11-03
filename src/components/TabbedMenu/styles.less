@@ -5,6 +5,7 @@
 @green-border: #C8D644;
 @dark-grey: #696967;
 @body-background: #EEF3C5; 
+@primary-colour: #004F90;
 
 .nav-link{
     background: @green-background;
@@ -16,14 +17,20 @@
     &:first-child{
         margin-left: 0;
     }
-    .active{
-        color: white; 
-    }
     &:hover{
         background: @blue-button-background;
         background: @blue-button-gradient;
         color: white; 
     }
+}
+
+.active{
+    color: white !important;
+    border-bottom: 0 !important; 
+    padding-bottom: 0 !important;
+    margin: 0 !important;
+    line-height: 2em;
+    font-size: 20px;
 }
 
 .tab-content{
@@ -33,4 +40,30 @@
     border-radius: 10px;
     border-top-left-radius: 0;
     padding: 1em;
+    .image-100{
+        width: 100%; 
+    }
+    ul{
+        list-style-type: none;
+        line-height: 1.5em;
+        ;
+        li{
+            position: relative;
+            color: @primary-colour;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        img{
+            position: absolute;
+            left: -25px;
+            top: 10px;
+        }
+    }
 }
+
+@media only screen and (max-width: 600px) {
+    .nav-link{
+        width: 100%; 
+        margin-bottom: 0 0 0 0 !important;
+    }
+  }

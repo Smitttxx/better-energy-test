@@ -18,7 +18,9 @@ const EmailSignUp = () => {
           className="input-text"
           placeholder="Enter your email address"
         />
-        <input type="submit" value="Sign up" className="primary-button" />
+        <div className="button-wrapper">
+          <input type="submit" value="Sign up" className="primary-button" />
+        </div>
       </form>
     </div>
   );

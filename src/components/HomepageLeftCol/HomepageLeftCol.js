@@ -2,12 +2,13 @@ import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import TabbedMenu from "../TabbedMenu/TabbedMenu";
 import banner from "./../../images/banner.png";
+import "./dist/style.css";
 
 const HomepageLeftCol = () => {
   return (
     <Fragment>
       <Link to="/GettingStarted">
-        <img src={banner} alt="Logo" />
+        <img src={banner} alt="Logo" className="hero-image" />
       </Link>
       <h6>
         <b>Get rewarded for saving energy with Better Energy</b>

@@ -19,3 +19,7 @@
 .container-green-gradient .input-text {
   width: 100%;
 }
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}

@@ -10,7 +10,7 @@ function Home() {
   return (
     <Fragment>
       <Row>
-        <Col xs={8}>
+        <Col md={8}>
           <HomepageLeftCol />
         </Col>
         <Col>
