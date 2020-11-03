@@ -1,0 +1,26 @@
+@green-gradient: linear-gradient(0deg, rgba(198,213,61,1) 21%, rgba(229,238,171,1) 76%);
+@green-background: rgb(198,213,61);
+@green-border: #C8D644;
+@dark-grey: #696967;
+
+.container-green-gradient{
+    background: @green-background;
+    background: @green-gradient;
+    border: 2px solid @green-border;
+    border-radius: 10px;
+    padding: 1em;
+    p{
+        color: @dark-grey;
+    }
+    h6{
+        margin: 0 0 0.5em 0;
+    }
+    .primary-button{
+        align-items: right;
+        display: flex;
+        margin: 1em 0 0 0;
+    }
+    .input-text{
+        width: 100%;
+    }
+}  

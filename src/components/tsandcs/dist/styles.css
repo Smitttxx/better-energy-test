@@ -1,0 +1,18 @@
+.terms-conditions {
+  background-color: #B9CD14;
+  padding: 1em;
+  margin: -1.1em;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: white;
+  margin-top: 3em;
+}
+.terms-conditions span {
+  font-weight: bold;
+  font-size: 14px;
+}
+.terms-conditions p {
+  color: white;
+  font-size: 10px;
+  padding-top: 1em;
+}

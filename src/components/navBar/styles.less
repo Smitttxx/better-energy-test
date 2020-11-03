@@ -1,0 +1,38 @@
+@lightblue: #7498c4;
+@darkblue: #3065a3;
+@hover-grey: #CAD8E9; 
+@active-grey: #8EABCF;
+
+.navbar{
+        background: rgb(48,101,163);
+        background: linear-gradient(0deg, rgba(48,101,163,1) 27%, rgba(116,152,196,1) 78%);
+        display: flex; 
+        border-radius: 5px;
+        list-style: none;
+        padding: 0 0 0 0 !important; 
+        justify-content: flex-start !important;
+        margin: 1em 0;
+        &__link{
+            color: white;
+            font-weight: bold; 
+            text-decoration: none;
+            font-size: 10px;
+            padding: 1em 1.5em;
+            border-left: 1px solid @lightblue;
+            border-right: 1px solid @darkblue;
+            line-height: 1em;
+            &:first-child{
+                border-left: none; 
+            }
+        }
+        &__link:hover{
+            background-color: @hover-grey;
+            color: @darkblue;
+        }
+        &__link--active{
+            background-color: @active-grey;
+            color: @darkblue;
+        }
+    }
+
+  

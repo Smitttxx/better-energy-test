@@ -1,0 +1,76 @@
+@body-background: #EEF3C5; 
+@primary-colour: #004F90;
+@light-grey: #AAAAAA;
+@blue-button-background: rgb(66,125,173);
+@blue-button-gradient: linear-gradient(180deg, rgba(66,125,173,1) 6%, rgba(0,46,110,1) 76%);
+@secondary-color: #73A028;
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: @body-background;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+
+  h1, h2, h3, h4, h5, h6{
+      color: @primary-colour;
+      margin: 1em 0; 
+  }
+
+  p{
+      color: @light-grey;
+      font-size: 14px;
+  }
+  
+  .primary-button{
+    background: @blue-button-background;
+    background: @blue-button-gradient;
+    color: white; 
+    border: none; 
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1em;
+    border-radius: 25px;
+    padding: 0.5em 1em;
+    &:hover{
+        text-decoration: underline;
+    }
+    &-with-arrow{
+      &:extend(.primary-button);
+      position: relative;
+      padding-left: 2.5em;
+        img{
+          position: absolute;
+          left: 3px;
+          background-color: white;
+          border-radius: 50%;
+          padding: 5px;
+        }
+        &:hover{
+          color: white;
+        }
+    }
+  }
+
+  .input-text{
+    -webkit-box-shadow: 7px 2px 29px -1px rgba(158,158,158,1);
+    -moz-box-shadow: 7px 2px 29px -1px rgba(158,158,158,1);
+    box-shadow: 7px 2px 29px -1px rgba(158,158,158,1);
+    border: 1px solid @light-grey;
+    border-radius: 5px;
+    padding: 3px 8px;
+  }
+
+  a{
+    color: @primary-colour;
+    &:hover{
+      color: @secondary-color;
+    }
+  }

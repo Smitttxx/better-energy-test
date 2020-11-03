@@ -1,0 +1,21 @@
+.container-green-gradient {
+  background: #c6d53d;
+  background: linear-gradient(0deg, #c6d53d 21%, #e5eeab 76%);
+  border: 2px solid #C8D644;
+  border-radius: 10px;
+  padding: 1em;
+}
+.container-green-gradient p {
+  color: #696967;
+}
+.container-green-gradient h6 {
+  margin: 0 0 0.5em 0;
+}
+.container-green-gradient .primary-button {
+  align-items: right;
+  display: flex;
+  margin: 1em 0 0 0;
+}
+.container-green-gradient .input-text {
+  width: 100%;
+}

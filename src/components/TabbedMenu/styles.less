@@ -1,0 +1,36 @@
+@green-gradient: linear-gradient(0deg, rgba(198,213,61,1) 21%, rgba(229,238,171,1) 76%);
+@green-background: rgb(198,213,61);
+@blue-button-background: rgb(66,125,173);
+@blue-button-gradient: linear-gradient(0deg, rgba(47,112,165,1) 51%, rgba(98,146,186,1) 100%);
+@green-border: #C8D644;
+@dark-grey: #696967;
+@body-background: #EEF3C5; 
+
+.nav-link{
+    background: @green-background;
+    background: @green-gradient;
+    color: white;
+    font-weight: bold;
+    margin: 0.5em; 
+    margin-bottom: 0.5em !important;
+    &:first-child{
+        margin-left: 0;
+    }
+    .active{
+        color: white; 
+    }
+    &:hover{
+        background: @blue-button-background;
+        background: @blue-button-gradient;
+        color: white; 
+    }
+}
+
+.tab-content{
+    margin-top: -1px;
+    background-color: @body-background;
+    border: solid 10px @green-border;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    padding: 1em;
+}

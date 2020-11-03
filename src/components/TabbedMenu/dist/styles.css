@@ -1,0 +1,27 @@
+.nav-link {
+  background: #c6d53d;
+  background: linear-gradient(0deg, #c6d53d 21%, #e5eeab 76%);
+  color: white;
+  font-weight: bold;
+  margin: 0.5em;
+  margin-bottom: 0.5em !important;
+}
+.nav-link:first-child {
+  margin-left: 0;
+}
+.nav-link .active {
+  color: white;
+}
+.nav-link:hover {
+  background: #427dad;
+  background: linear-gradient(0deg, #2f70a5 51%, #6292ba 100%);
+  color: white;
+}
+.tab-content {
+  margin-top: -1px;
+  background-color: #EEF3C5;
+  border: solid 10px #C8D644;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  padding: 1em;
+}
